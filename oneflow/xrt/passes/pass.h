@@ -29,6 +29,7 @@ enum XrtEngineOptionBit : int {
   kUseDefault = 0,
   kUseXlaJit = 1,
   kUseTensorRT = 2,
+  kUseTest = 3,
 };
 
 struct ClusteringOptions {
