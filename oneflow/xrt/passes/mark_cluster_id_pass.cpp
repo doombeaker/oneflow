@@ -204,6 +204,8 @@ void MarkClusterIdPass::Run(XrtGraph *graph, const XrtPassOptions &options) {
     ClusteringSubgraphs(clustering_options, XrtEngine::XLA);
   }
 
+  ClusteringSubgraphs(clustering_options, XrtEngine::TEST);
+
   RemoveInvalidClusterNodes(clustering_options);
   RerankClusterIds();
 
